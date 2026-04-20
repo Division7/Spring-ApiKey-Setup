@@ -10,6 +10,8 @@ your API key. I would certainly consider this a bug.
 
 On top of that, these API keys are very simple, and have no expiration, permissions management, no attribution to users, etc.
 
-You may want to use this as a starting point for your own API key/OIDC authentication mechanism.
+You may want to use this as a starting point for your own API key/OIDC authentication mechanism. You also may want to consider being able to pass in a User to the `ApiKeyToken` constructor, and have the key inherit their permissions (if you were, say, pulling from a users table).
+
+Additionally, if you were a cs156 student, I would tell you to consider whether or not you should add some noop `MockitoBeans` for anything that is passed to the Filter so that the entire testing suite doesn't go insane.
 
 Good luck!
